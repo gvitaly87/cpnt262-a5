@@ -6,10 +6,11 @@ const Image = require('../../models/ImageModel');
 
 // Export as a function so we can pass it args
 module.exports = () => {
-  router.get('/v0/gallery', async (req, res, next) => {
+  router.get('/v0/images', async (req, res, next) => {
     try {
       const galleryJSON = await Image.find({});
-      res.json(galleryJSON);
+      if (galleryJSON) return res.json(galleryJSON);
+      return next(new Error('failed to read and convert db images into json'));
     } catch (err) {
       return next(err);
     }

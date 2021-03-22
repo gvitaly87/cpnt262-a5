@@ -3,7 +3,7 @@ import getRequest from './get-json.mjs';
 const populateGallery = async () => {
   // Get the gallery element so we can populate it
   const gallery = document.querySelector('#gallery');
-  const resJSON = await getRequest('/api/v0/gallery');
+  const resJSON = await getRequest('/api/v0/images');
   // Need to save it to imgArr because getRequest returns a promise.
   const imgArr = resJSON;
   imgArr.forEach((picture) => {

@@ -3,7 +3,7 @@ const express = require('express');
 const router = express.Router();
 const dayJS = require('dayjs');
 
-// const galleryRoute = require('./gallery');
+const galleryRoute = require('./gallery');
 const registerRoute = require('./register');
 const loginRoute = require('./login');
 const apiRoute = require('./api/v0');
@@ -15,7 +15,7 @@ module.exports = () => {
   });
 
   //Will be added for A5
-  // router.use('/gallery', galleryRoute());
+  router.use('/gallery', galleryRoute());
   router.use('/register', registerRoute());
   router.use('/login', loginRoute());
   router.use('/api', apiRoute());
