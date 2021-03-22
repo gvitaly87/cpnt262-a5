@@ -15,7 +15,7 @@ module.exports = () => {
   });
 
   //Will be added for A5
-  router.use('/gallery', galleryRoute());
+  router.use('/images', galleryRoute());
   router.use('/register', registerRoute());
   router.use('/login', loginRoute());
   router.use('/api', apiRoute());
