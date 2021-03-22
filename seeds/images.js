@@ -1,12 +1,11 @@
-const express = require('express');
-
-const imgArr = [
+module.exports = [
   {
     id: 1,
     title: 'Gala Apples',
     description: 'Gala is a clonally propagated apple cultivar with a mild and sweet flavour.',
     width: 1920,
     height: 1080,
+    pathURL: '/images/',
     imgName: 'apples-red',
     imgExt: 'webp',
     linkURL: 'https://en.wikipedia.org/wiki/Gala_(apple)',
@@ -20,6 +19,7 @@ const imgArr = [
       'A banana is an elongated, edible fruit – botanically a berry – produced by several kinds of large herbaceous flowering plants in the genus Musa.',
     width: 1920,
     height: 1080,
+    pathURL: '/images/',
     imgName: 'bananas',
     imgExt: 'webp',
     linkURL: 'https://en.wikipedia.org/wiki/Banana',
@@ -33,6 +33,7 @@ const imgArr = [
       'A lime is a citrus fruit, which is typically round, green in color, 3–6 cm in diameter, and contains acidic juice vesicles.',
     width: 1920,
     height: 1080,
+    pathURL: '/images/',
     imgName: 'limes',
     imgExt: 'webp',
     linkURL: 'https://en.wikipedia.org/wiki/Lime_(fruit)',
@@ -46,6 +47,7 @@ const imgArr = [
       'A melon is any of various plants of the family Cucurbitaceae with sweet, edible, and fleshy fruit.',
     width: 1920,
     height: 1080,
+    pathURL: '/images/',
     imgName: 'melons',
     imgExt: 'webp',
     linkURL: 'https://en.wikipedia.org/wiki/Melon',
@@ -59,6 +61,7 @@ const imgArr = [
       'The orange is the fruit of various citrus species in the family Rutaceae; it primarily refers to Citrus × sinensis, which is also called sweet orange.',
     width: 1920,
     height: 1080,
+    pathURL: '/images/',
     imgName: 'oranges',
     imgExt: 'webp',
     linkURL: 'https://en.wikipedia.org/wiki/Orange_(fruit)',
@@ -72,6 +75,7 @@ const imgArr = [
       'The peach (Prunus persica) is a deciduous tree native to the region of Northwest China, where it was first domesticated and cultivated.',
     width: 1920,
     height: 1080,
+    pathURL: '/images/',
     imgName: 'peaches',
     imgExt: 'webp',
     linkURL: 'https://en.wikipedia.org/wiki/Peach',
@@ -85,6 +89,7 @@ const imgArr = [
       'Pears are fruits produced and consumed around the world, growing on a tree and harvested in late Summer into October.',
     width: 1920,
     height: 1080,
+    pathURL: '/images/',
     imgName: 'pears',
     imgExt: 'webp',
     linkURL: 'https://en.wikipedia.org/wiki/Pear',
@@ -98,6 +103,7 @@ const imgArr = [
       'A plum is a fruit of some species in Prunus subg. Prunus. Mature plum fruit may have a dusty-white waxy coating that gives them a glaucous appearance.',
     width: 1920,
     height: 1080,
+    pathURL: '/images/',
     imgName: 'plums',
     imgExt: 'webp',
     linkURL: 'https://en.wikipedia.org/wiki/Plum',
@@ -111,6 +117,7 @@ const imgArr = [
       'The pomelo or in scientific terms Citrus maxima or Citrus grandis, is the largest citrus fruit from the family Rutaceae and the principal ancestor of the grapefruit.',
     width: 1920,
     height: 1080,
+    pathURL: '/images/',
     imgName: 'pomelos',
     imgExt: 'webp',
     linkURL: 'https://en.wikipedia.org/wiki/Pomelo',
@@ -124,6 +131,7 @@ const imgArr = [
       'Watermelon is a flowering plant species of the Cucurbitaceae family . It is a highly cultivated fruit worldwide, with more than 1,000 varieties.',
     width: 1920,
     height: 1080,
+    pathURL: '/images/',
     imgName: 'watermelons',
     imgExt: 'webp',
     linkURL: 'https://en.wikipedia.org/wiki/Watermelon',
@@ -131,5 +139,3 @@ const imgArr = [
     creditURL: 'https://www.pexels.com/@victorino',
   },
 ];
-
-module.exports = imgArr;
