@@ -1,16 +1,16 @@
-# CPNT262 - Assignment 4 - Deployed Static Express Website
+# CPNT262 - Assignment 5 - JSON Routes with Heroku and MongoDB Atlas
 
 ## General Information
 
 - Course: CPNT-262 - Web Client & Server Prog.
 - Author: [Vitaly Gins](https://github.com/gvitaly87) - Repository owner and maintainer.
 - Github Links:
-  - [GH repo](https://github.com/gvitaly87/cpnt262-a4)
-  - [Deployed Heroku URL](https://vit-cpnt-262-a4.herokuapp.com/)
+  - [GH repo](https://github.com/gvitaly87/cpnt262-a5)
+  - [Deployed Heroku URL](https://vit-cpnt-262-a5.herokuapp.com/)
 
 ### Context
 
-A three page fruit website, with a mock login, and registration page. The webpage is using ejs to generate dynamic pages. The website also sends a json api when requested to populate the gallery on the front end.
+A three page fruit website, now fully working with MongoDB. The image api, as well as the individual image pages are generated using mongodb, and the mongoose module.
 
 ### Notes
 
@@ -30,6 +30,7 @@ A three page fruit website, with a mock login, and registration page. The webpag
 - [dotenv](https://www.npmjs.com/package/dotenv) to load environment variables
 - [ejs](https://www.npmjs.com/package/ejs) In order to work with javascript templates to generate dynamic pages
 - [dayJS](https://www.npmjs.com/package/dayjs) is a minimalist JavaScript library that parses, validates, manipulates, and displays dates and times for modern browsers with a largely Moment.js-compatible API. If you use Moment.js, you already know how to use Day.js.
+- [mongoose]
 
 ---
 

@@ -1,7 +1,7 @@
 {
-  "name": "static-express-website",
+  "name": "cpnt-262-a5",
   "version": "1.0.0",
-  "description": "Deploying a static gallery website to express and eventually serving it dynamically from a JSON API",
+  "description": "CPNT 262 A5 moving gallery to mongodb and using mongoose objects",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -24,6 +24,7 @@
     "dayjs": "^1.10.4",
     "dotenv": "^8.2.0",
     "ejs": "^3.1.6",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.12.2"
   }
 }

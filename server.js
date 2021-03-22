@@ -21,7 +21,7 @@ app.set('view engine', 'ejs');
 
 // Set global vars for ejs
 app.use('/', (req, res, next) => {
-  res.locals.siteTitle = 'CPNT 262 - A4';
+  res.locals.siteTitle = 'CPNT 262 - A5';
   next();
 });
 
