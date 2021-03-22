@@ -1,0 +1,23 @@
+footer {
+  width: 100%;
+  background-color: var(--nav-color2);
+}
+footer nav ul {
+  display: flex;
+  justify-content: center;
+}
+footer nav li {
+  padding: 1.6rem 0;
+}
+footer a {
+  color: var(--nav-color1);
+}
+footer nav a {
+  font-size: 1rem;
+  padding: 1rem;
+}
+footer p {
+  font-size: 1.1rem;
+  line-height: 2rem;
+  text-align: center;
+}

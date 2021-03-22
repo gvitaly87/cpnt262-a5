@@ -1,0 +1,44 @@
+:root {
+  --nav-color1: hsla(325, 100%, 50%, 0.8);
+  --nav-color2: hsla(325, 30%, 90%, 0.8);
+  --nav-color-dark: hsla(0, 69%, 19%, 0.623);
+}
+header {
+  position: relative;
+  height: 30vh;
+  max-width: 100%;
+
+  background-image: url('../images/lg/header2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 60%;
+}
+header nav {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--nav-color2);
+}
+header nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+header nav li {
+  padding: 1.6rem 0;
+}
+header nav a {
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  color: var(--nav-color1);
+}
+.call-to-action {
+  background-color: var(--nav-color1);
+  padding-right: 0;
+}
+.call-to-action a {
+  color: var(--nav-color2);
+}
+header nav a:hover {
+  color: var(--nav-color2);
+  background-color: var(--nav-color-dark);
+}
