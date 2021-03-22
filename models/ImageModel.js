@@ -6,6 +6,7 @@ const imageSchema = mongoose.Schema({
   description: String,
   width: Number,
   height: Number,
+  pathURL: String,
   imgName: String,
   imgExt: String,
   linkURL: String,
