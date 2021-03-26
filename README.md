@@ -13,16 +13,15 @@
 
 ### Context
 
-A three page fruit website, now fully working with MongoDB. The image api, as well as the individual image pages are generated using mongodb, and the mongoose module.
+A three page fruit website, now fully working with MongoDB. The image api, as well as the individual image pages are generated using MongoDB, and the mongoose MongoDB object.
 
 ### Notes
 
 - Error messages are fully displayed on the server console while providing the client with a generic code/message.
-- Routes is exported as a function so I can pass arguments to it in A5
 - The views use a template which then fills in the page content
 - PathURL is replaced with imgName and imgExt.
 - Can click images to stretch them to a full screen
-- Animated Gallery was removed(might return to it later),
+- Decided against passing my routes function the Image model instead of requiring it. Not sure which is the better practice.
 
 ---
 
@@ -32,7 +31,7 @@ A three page fruit website, now fully working with MongoDB. The image api, as we
 - [dotenv](https://www.npmjs.com/package/dotenv) to load environment variables
 - [ejs](https://www.npmjs.com/package/ejs) In order to work with javascript templates to generate dynamic pages
 - [dayJS](https://www.npmjs.com/package/dayjs) is a minimalist JavaScript library that parses, validates, manipulates, and displays dates and times for modern browsers with a largely Moment.js-compatible API. If you use Moment.js, you already know how to use Day.js.
-- [mongoose]
+- [mongoose](https://www.npmjs.com/package/mongoose) Mongoose is a MongoDB object modeling tool designed to work in an asynchronous environment. Mongoose supports both promises and callbacks.
 
 ---
 
