@@ -4,7 +4,7 @@ const router = express.Router();
 
 const dayJS = require('dayjs');
 
-// Export as a function so we can pass it args
+// Handling of get and post requests for the register page
 module.exports = () => {
   router.get('/', (req, res) => {
     res.render('layout', {

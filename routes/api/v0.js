@@ -4,8 +4,11 @@ const router = express.Router();
 
 const Image = require('../../models/ImageModel');
 
-// Export as a function so we can pass it args
 module.exports = () => {
+  /*******************************************************************************
+   * Input : get request for /api/v0/images                                      *
+   * Output : json file containing all image objects stored inside the images db.*
+   *******************************************************************************/
   router.get('/v0/images', async (req, res, next) => {
     try {
       const galleryJSON = await Image.find({});

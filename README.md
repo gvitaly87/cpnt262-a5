@@ -4,6 +4,9 @@
 
 - Course: CPNT-262 - Web Client & Server Prog.
 - Author: [Vitaly Gins](https://github.com/gvitaly87) - Repository owner and maintainer.
+- GET Endpoints:
+  - [GET /api/v0/images](https://vit-cpnt-262-a5.herokuapp.com/api/v0/images)
+  - [GET /images/:id](https://vit-cpnt-262-a5.herokuapp.com/images/3)
 - Github Links:
   - [GH repo](https://github.com/gvitaly87/cpnt262-a5)
   - [Deployed Heroku URL](https://vit-cpnt-262-a5.herokuapp.com/)
@@ -14,7 +17,6 @@ A three page fruit website, now fully working with MongoDB. The image api, as we
 
 ### Notes
 
-- The npm module used is dayJS, it is used on the footer and on the error page.
 - Error messages are fully displayed on the server console while providing the client with a generic code/message.
 - Routes is exported as a function so I can pass arguments to it in A5
 - The views use a template which then fills in the page content

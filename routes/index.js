@@ -3,19 +3,22 @@ const express = require('express');
 const router = express.Router();
 const dayJS = require('dayjs');
 
-const galleryRoute = require('./gallery');
+const imagesRoute = require('./images');
 const registerRoute = require('./register');
 const loginRoute = require('./login');
 const apiRoute = require('./api/v0');
 
-// Export as a function so we can pass it args
+/*******************************************************************************
+ * Input : get request for /                                                   *
+ * Output : A rendered layout for the index page from the index partial        *
+ *******************************************************************************/
 module.exports = () => {
   router.get('/', (req, res) => {
     res.render('layout', { pageTitle: 'Index', template: 'index', dayJS });
   });
 
-  //Will be added for A5
-  router.use('/images', galleryRoute());
+  // Separates the routes into their own modules
+  router.use('/images', imagesRoute());
   router.use('/register', registerRoute());
   router.use('/login', loginRoute());
   router.use('/api', apiRoute());

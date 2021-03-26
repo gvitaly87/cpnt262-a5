@@ -7,7 +7,9 @@ mongoose
     console.log('Connected to DB...');
   })
   .catch(function (err) {
-    console.log(err);
+    err.message = 'Internal Server - Failed to connect to DB...';
+    err.status = 500;
+    console.error(err);
   });
 
 module.exports = mongoose;

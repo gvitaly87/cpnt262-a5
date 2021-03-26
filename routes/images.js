@@ -2,28 +2,26 @@ const express = require('express');
 
 const router = express.Router();
 const dayJS = require('dayjs');
-// TODO: get rid of imgArr
-const imgArr = require('../data/images');
-const Image = require('../models/ImageModel');
-// Export as a function so we can pass it args
-module.exports = () => {
-  // TODO: update gallery tab to do something
-  router.get('/', (req, res) => {
-    res.render('layout', {
-      pageTitle: 'Gallery',
-      imgArr,
-      template: 'gallery',
-      dayJS,
-    });
-  });
 
+const Image = require('../models/ImageModel');
+
+module.exports = () => {
+  // Filler function for get requests for /images
+  router.get('/', (req, res) => {
+    res.send('You wanted to test /images/:id instead');
+  });
+  /*******************************************************************************
+   * Input : get request for /images/:id                                         *
+   * Output : Returns a template for a single image file who's id matches the    *
+   *          req.id, the image object is inserted on the backend                *
+   *******************************************************************************/
   router.get('/:id', async (req, res, next) => {
     try {
       const image = await Image.findOne({ id: req.params.id });
       if (image)
         return res.render('layout', {
           pageTitle: image.title,
-          template: 'image',
+          template: 'single-item',
           picture: image,
           dayJS,
         });
