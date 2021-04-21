@@ -1,4 +1,4 @@
-# CPNT262 - Assignment 5 - JSON Routes with Heroku and MongoDB Atlas
+# Fruit Gallery - JSON Routes with Heroku and MongoDB Atlas
 
 ## General Information
 
