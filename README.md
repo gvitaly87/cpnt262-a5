@@ -8,7 +8,7 @@
   - [GET /api/v0/images](https://vit-cpnt-262-a5.herokuapp.com/api/v0/images)
   - [GET /images/:id](https://vit-cpnt-262-a5.herokuapp.com/images/3)
 - Github Links:
-  - [GH repo](https://github.com/gvitaly87/cpnt262-a5)
+  - [GH repo](https://github.com/gvitaly87/json-routes-heroku-and-mongodb)
   - [Deployed Heroku URL](https://vit-cpnt-262-a5.herokuapp.com/)
 
 ### Context
